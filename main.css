@@ -1,0 +1,37 @@
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.btn-theme {
+    background-color: #323235;
+    color: white;
+}
+
+.quote-container {
+    margin: 20px;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-style: italic;
+    border: none;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+    content: open-quote;
+    font-size: 60px;
+}
+
+blockquote h3 {
+    margin-top: -64px;
+    margin-left: 32px;
+}
+
+.btn-grp {
+    margin-top: 48px;
+}
